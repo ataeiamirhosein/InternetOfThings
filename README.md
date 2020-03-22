@@ -13,7 +13,7 @@
 - RadioCountToLedsC.nc
 
 # Internet Of Things 1
-![screenshot from resualt of cooja](http://iotco.net/iothw1-1.png)
+![screenshot from resualt of cooja](http://iotco.net/iothw1-1.jpg)
 
 # Internet Of Things 2
-![screenshot from resualt of cooja](http://iotco.net/iothw1-2.png)
+![screenshot from resualt of cooja](http://iotco.net/iothw1-2.jpg)
