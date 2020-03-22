@@ -71,7 +71,6 @@ implementation {
     if (len != sizeof(radio_count_msg_t)) {return bufPtr;}
     else {
       radio_count_msg_t* rcm = (radio_count_msg_t*)payload;
-      counter++;
      
       if (rcm->NodeId ==1) {      
 		call Leds.led0On();      
@@ -84,9 +83,7 @@ implementation {
 				if(rcm->NodeId ==3){
 					call Leds.led2On();
 					}
-				 
-					
-		
+
 	  if (counter % 10 == 0){
 	  	call Leds.led0Off();
 	  	call Leds.led1Off();
