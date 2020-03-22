@@ -1,7 +1,7 @@
 # InternetOfThings
 
-Makefile
-RadioCountToLeds.h
-RadioCountToLedsAppC.nc
-RadioCountToLedsC.nc
-app.xml
+- Makefile
+- RadioCountToLeds.h
+- RadioCountToLedsAppC.nc
+- RadioCountToLedsC.nc
+- app.xml
