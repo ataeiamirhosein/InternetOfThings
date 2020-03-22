@@ -4,7 +4,7 @@ i am **amirhosein ataei** student of **telecommunication** field in polimi with 
 
 # Report
 we have three file type in this project  
-in .h file we confine 
+in `.h` file we confine 
 
 ## first resualt with cooja (in range)
 we can see the leds according to each three mote turning on
