@@ -12,4 +12,4 @@
 - RadioCountToLedsAppC.nc
 - RadioCountToLedsC.nc
 
-![Image description](link-to-image)
+![screenshot from resualt of cooja](http://iotco.net/iothw1.png)
