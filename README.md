@@ -22,4 +22,4 @@ we can see the led of out range mote is turn of
 - RadioCountToLedsAppC.nc
 - RadioCountToLedsC.nc
 
-use [:~$ make telosb] command
+use `:~$ make telosb` command
