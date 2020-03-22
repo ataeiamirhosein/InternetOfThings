@@ -1,6 +1,6 @@
 // $Id: RadioCountToLedsC.nc,v 1.7 2010-06-29 22:07:17 scipio Exp $
 
-/*									tab:4
+/*
  * Copyright (c) 2000-2005 The Regents of the University  of California.  
  * All rights reserved.
  *
@@ -50,7 +50,6 @@
  * displays the bottom three bits on its LEDs. This application is a useful 
  * test to show that basic AM communication and timers work.
  *
- * @author Philip Levis
  * @date   June 6 2005
  */
 
