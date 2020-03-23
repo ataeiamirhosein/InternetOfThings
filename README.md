@@ -7,7 +7,11 @@ we have three file type in this project.
 
 in `.h` file we confine the stracture of radio count message functions for example the stracture of variable that is in my project in type of unsign integer 8 bit for variable that keep the id of each mote and 32 bit for the counter.  
 
-also we have two file with `.nc` that one of them with name of describe appC and C.  
+also we have two file with `.nc` that one of them with name of describe appC and C files.  
+
+in ~appC.nc file we have configuration and implementation of each things that used in project for example implement timer.  
+
+in ~C.nc file we have code for module interfaces and running boot event.  
 
 
 
@@ -23,7 +27,7 @@ each mote broadcast a message to other motes and demonestrate on (picture 1) tha
 
 
 ## second resualt with cooja (out of range)
-we can see when we change the position of one mote and set out of range the related led of out range mote is turned of
+we can see when we change the position of one mote and set out of range in other motes the related led of out range mote is turned of
 
 ![screenshot from resualt of cooja](http://iotco.net/iothw1-2.jpg)
 (picture 2)
