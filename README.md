@@ -7,14 +7,16 @@ we have three file type in this project.
 
 in `.h` file we confine the stracture of radio count message functions for example the stracture of variable that is in my project in type of unsign integer 8 bit for variable that keep the id of each mote and 32 bit for the counter.  
 
-also we have two file with `.nc` that one of them with name of describe appC and C files.  
+also we have two file with `.nc` that one of them with name of describe `appC` and `C` files.  
 
-in ~appC.nc file we have configuration and implementation of each things that used in project for example implement timer.  
+in `~appC.nc` file we have configuration and implementation of things that is in project. (e.g. timer)    
 
-in ~C.nc file we have code for module interfaces and running boot event.  
-
-
-
+for `~C.nc` file we have all the code of program here for used module interfaces and running **events** that i describe these below sequently:  
+ 1-
+ 2-
+ 3-
+ 
+ 
 ## first resualt with cooja (in range)
 we can see the leds according to each three mote turning on  
 each mote broadcast a message to other motes and demonestrate on (picture 1) that the leds related to other motes turn on other motes this means that the broadcast message with other motes received from each of them and turn related led
