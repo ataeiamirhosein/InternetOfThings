@@ -13,10 +13,13 @@ in `~appC.nc` file we have configuration and implementation of things that is in
 
 for `~C.nc` file we have all the program code here for used module interfaces and running *events* that i describe below sequently:  
 
-**first section:**  
-**second section:**  
-**third section:**  
-**forth section:**  
+**first section:** define header files (timer and our stracture header) and all of modules that we used during the project.  
+
+**second section:** firstly start to set variables and type of them like `locked` with type of boolian that we use for locking a message for sending.  
+also we 
+**third section:**   
+
+**forth section:**   
  
 ## first resualt with cooja (in range)
 we can see the leds according to each three mote turning on  
@@ -37,10 +40,10 @@ we can see when we change the position of one mote and set out of range in other
 
 
 ## including files of this repo for running simulation
--5
- - RadioCountToLeds.h
- - RadioCountToLedsAppC.nc
- - RadioCountToLedsC.nc
- - Makefile
+
+- RadioCountToLeds.h
+- RadioCountToLedsAppC.nc
+- RadioCountToLedsC.nc
+- Makefile
 
 :+1: we can use  :~$ `make telosb` command to build a `main.ex` file for cooja simulation
