@@ -15,18 +15,24 @@ for `~C.nc` file we have all the program code here for used module interfaces an
 
 **first section:** define header files (timer and our stracture header) and all of modules that we used during the project.  
 
-**second section:** firstly start to set variables and type of them like `locked` with type of boolian that we use for locking a message for sending.  
-also we 
-**third section:**   
+**second section:** start to set variables and type of them like `locked` with type of boolian that we use for locking a message for sending.  
 
-**forth section:**   
+**third section:** implement events such as boot, according to our knowledge always we have an initial function in C family program that called at the begining of starting program that this project is boot. so, in boot event we call an AMControl.start() function to start the program.  
+
+**forth section:** in AMControl.start we check the function and if no problem we go for periodically calling timers for each mote individually using specific `ID` according to use `TOS_NODE_ID`.  
+we use:
+- 1000 ms for mote 1.
+- 1000/3 ms for mote 2.
+- 200 ms for mote 3.
+
+**fifth section** we fire the timer   
  
 ## first resualt with cooja (in range)
 we can see the leds according to each three mote turning on  
 each mote broadcast a message to other motes and demonestrate on (picture 1) that the leds related to other motes turn on other motes this means that the broadcast message with other motes received from each of them and turn related led
-- the led one with **green** light related to **mote two**
-- the led two with **red** light related to **mote one**
-- the led three with **blue** light related to **mote three** 
+- the led one with **green** light related to **mote two**.
+- the led two with **red** light related to **mote one**.
+- the led three with **blue** light related to **mote three**.
 
 ![screenshot from resualt of cooja](http://iotco.net/iothw1-1.jpg)
 (picture 1)
@@ -46,4 +52,4 @@ we can see when we change the position of one mote and set out of range in other
 - RadioCountToLedsC.nc
 - Makefile
 
-:+1: we can use  :~$ `make telosb` command to build a `main.ex` file for cooja simulation
+Finally, we can use  :~$ `make telosb` command to build a `main.ex` file for cooja simulation
