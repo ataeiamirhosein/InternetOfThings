@@ -36,4 +36,4 @@ we can see the related led of out range mote is turned of
 - RadioCountToLedsC.nc
 - Makefile
 
-:+1: we can use  :~$ `make telosb` command to build a main.ex file for cooja simulation
+:+1: we can use  :~$ `make telosb` command to build a `main.ex` file for cooja simulation
