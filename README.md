@@ -56,4 +56,4 @@ we can see when we change the position of one mote and set out of range in other
 - RadioCountToLedsC.nc
 - Makefile
 
-Finally, we can use  :~$ `make telosb` command to build a `main.ex` file for cooja simulation
+Finally, we can use  :~$ `make telosb` command to build a `main.exe` file for cooja simulation
