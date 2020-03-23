@@ -11,11 +11,12 @@ also we have two file with `.nc` that one of them with name of describe `appC` a
 
 in `~appC.nc` file we have configuration and implementation of things that is in project. (e.g. timer)    
 
-for `~C.nc` file we have all the code of program here for used module interfaces and running **events** that i describe these below sequently:  
- 1-
- 2-
- 3-
- 
+for `~C.nc` file we have all the program code here for used module interfaces and running *events* that i describe below sequently:  
+
+**first section:**  
+**second section:**  
+**third section:**  
+**forth section:**  
  
 ## first resualt with cooja (in range)
 we can see the leds according to each three mote turning on  
