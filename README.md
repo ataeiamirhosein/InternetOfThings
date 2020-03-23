@@ -23,14 +23,14 @@ for `~C.nc` file we have all the program code here for used module interfaces an
 we use:
 - 1000 ms for mote 1.
 - 1000/3 ms for mote 2.
-- 200 ms for mote 3.
+- 200 ms for mote 3.  
 
-**fifth section** we fire the each timer and running counter also id of each motes to produce the packet and ready for send by broadcast with AMSend.send() function and argument `AM_BROADCAST_ADDR`.  
+**fifth section:** we fire the each timer and running counter also id of each motes to produce the packet and ready for send by broadcast with AMSend.send() function and argument `AM_BROADCAST_ADDR`.  
 
-**sixth section** we receive the packets by Receive.receive() function and compare for deciding to toggling the leds.
+**sixth section:** we receive the packets by Receive.receive() function and compare for deciding to toggling the leds.  
 
 finally we simulate the project with `cooja` and seee the resault of cooja simulation below:
- 
+
 ## first resualt with cooja (in range)
 we can see the leds according to each three mote turning on  
 each mote broadcast a message to other motes and demonestrate on (picture 1) that the leds related to other motes turn on other motes this means that the broadcast message with other motes received from each of them and turn related led
