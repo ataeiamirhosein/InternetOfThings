@@ -42,7 +42,7 @@ each mote broadcast a message to other motes and demonestrate on (picture 1) tha
 (picture 1)
 
 
-## second resualt with cooja (out of range)
+## second resualt with cooja (one out of range)
 we can see when we change the position of one mote and set out of range in other motes the related led of out range mote is turned of
 
 ![screenshot from resualt of cooja](http://iotco.net/iothw1-2.jpg)
