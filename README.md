@@ -37,10 +37,10 @@ we can see when we change the position of one mote and set out of range in other
 
 
 ## including files of this repo for running simulation
-
--RadioCountToLeds.h
--RadioCountToLedsAppC.nc
--RadioCountToLedsC.nc
--Makefile
+-5
+ - RadioCountToLeds.h
+ - RadioCountToLedsAppC.nc
+ - RadioCountToLedsC.nc
+ - Makefile
 
 :+1: we can use  :~$ `make telosb` command to build a `main.ex` file for cooja simulation
