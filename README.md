@@ -1,9 +1,8 @@
-# Internet Of Things cooja simulation
 
-i am **amirhosein ataei** student of **telecommunication** field in polimi with person code **10722472** and write these files on **22 march 2020** at **11pm** and i write the report of my simulation which describe below:
+# Internet Of Things cooja simulation (Report and Resault)
 
-## Report and Resault
-we have three file type in this project.  
+
+we have three file type in this simulation project which describe below:  
 
 in `.h` file we confine the stracture of radio count message functions for example the stracture of variable that is in my project in type of unsign integer 8 bit for variable that keep the id of each mote and 32 bit for the counter.  
 
@@ -11,7 +10,7 @@ also we have two file with `.nc` that one of them with name of describe `appC` a
 
 in `~appC.nc` file we have configuration and implementation of things that is in project. (e.g. timer)    
 
-for `~C.nc` file we have all the program code here for used module interfaces and running *events* that i describe below sequently:  
+for `~C.nc` file we have all the program code here for used module interfaces and running *events* that described below sequently:  
 
 **first section:** define header files (timer and our stracture header) and all of modules that we used during the project.  
 
@@ -56,4 +55,4 @@ we can see when we change the position of one mote and set out of range in other
 - RadioCountToLedsC.nc
 - Makefile
 
-Finally, we can use  :~$ `make telosb` command to build a `main.exe` file for cooja simulation
+Finally, we can use  :~$ `make telosb` command to build a `main.exe` file for cooja simulation to see the test
