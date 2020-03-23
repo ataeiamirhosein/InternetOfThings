@@ -25,7 +25,11 @@ we use:
 - 1000/3 ms for mote 2.
 - 200 ms for mote 3.
 
-**fifth section** we fire the timer   
+**fifth section** we fire the each timer and running counter also id of each motes to produce the packet and ready for send by broadcast with AMSend.send() function and argument `AM_BROADCAST_ADDR`.  
+
+**sixth section** we receive the packets by Receive.receive() function and compare for deciding to toggling the leds.
+
+finally we simulate the project with `cooja` and seee the resault of cooja simulation below:
  
 ## first resualt with cooja (in range)
 we can see the leds according to each three mote turning on  
