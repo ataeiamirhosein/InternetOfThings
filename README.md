@@ -10,7 +10,7 @@ also we have two file with `.nc` that one of them with name of describe `appC` a
 
 in `~appC.nc` file we have configuration and implementation of things that is in project. (e.g. timer)    
 
-for `~C.nc` file we have all the program code here for used module interfaces and running *events* that described below sequently:  
+for `~C.nc` file we have all the program code here for used module interfaces and running *events* that described sequently:  
 
 **first section:** define header files (timer and our stracture header) and all of modules that we used during the project.  
 
@@ -28,7 +28,7 @@ we use:
 
 **sixth section:** we receive the packets by `Receive.receive()` function and compare for deciding to toggling the leds.  
 
-finally we simulate the project with `cooja` and seee the resault of cooja simulation below:
+finally we simulate the project with `cooja` and seee the resault of [cooja](https://anrg.usc.edu/contiki/index.php/Cooja_Simulator) simulation below:
 
 ## first resualt with cooja (in range)
 we can see the leds according to each three mote turning on  
