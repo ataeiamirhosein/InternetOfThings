@@ -14,9 +14,9 @@ also we have two file with `.nc` that one of them with name of describe appC and
 ## first resualt with cooja (in range)
 we can see the leds according to each three mote turning on  
 each mote broadcast a message to other motes and demonestrate on (picture 1) that the leds related to other motes turn on other motes this means that the broadcast message with other motes received from each of them and turn related led
-- the led one with green light related to mote two
-- the led two with red light related to mote one
-- the led three with blue light related to mote three 
+- the led one with **green** light related to **mote two**
+- the led two with **red** light related to **mote one**
+- the led three with **blue** light related to **mote three** 
 
 ![screenshot from resualt of cooja](http://iotco.net/iothw1-1.jpg)
 (picture 1)
