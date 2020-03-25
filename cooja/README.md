@@ -1,7 +1,6 @@
 
 # Internet Of Things cooja simulation (Report and Resault)
 
-
 we have three file type in this simulation project which describe below:  
 
 in `.h` file we confine the stracture of radio count message functions for example the stracture of variable that is in my project in type of unsign integer 8 bit for variable that keep the **id** of each mote and 32 bit for the **counter**.  
@@ -57,5 +56,6 @@ we can see when we change the position of one mote and set out of range in other
 
 Finally, we can use  :~$ `make telosb` command to build a `main.exe` file for cooja simulation to see the test
 
+## telosb mote
+
 ![telosb](http://iotco.net/telosb.png)  
-(telosb mote)
