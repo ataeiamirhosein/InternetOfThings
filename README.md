@@ -1,6 +1,10 @@
 
 # internet of things (TinyOS)
 
+TinyOS is an open source, BSD-licensed operating system designed for low-power wireless devices, such as those used in sensor networks, ubiquitous computing, personal area networks, smart buildings, and smart meters.  
+
+cooja and tossim is two simulation for tinyos that cooja has GUI but tossim has only CLI.  
+
 ## COOJA
 - **you can go to folder /cooja for files related to simulating with cooja**  
 
