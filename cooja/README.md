@@ -37,14 +37,14 @@ each mote broadcast a message to other motes and demonestrate on (picture 1) tha
 - the led two with **red** light related to **mote one**.
 - the led three with **blue** light related to **mote three**.
 
-![screenshot from resualt of cooja](http://iotco.net/iothw1-1.jpg)
+![screenshot from resualt of cooja](http://iotco.net/iothw1-1.jpg)  
 (picture 1)
 
 
 ## second resualt with cooja (one out of range)
 we can see when we change the position of one mote and set out of range in other motes the related led of out range mote is turned of
 
-![screenshot from resualt of cooja](http://iotco.net/iothw1-2.jpg)
+![screenshot from resualt of cooja](http://iotco.net/iothw1-2.jpg)  
 (picture 2)
 
 
@@ -57,5 +57,5 @@ we can see when we change the position of one mote and set out of range in other
 
 Finally, we can use  :~$ `make telosb` command to build a `main.exe` file for cooja simulation to see the test
 
-![telosb](http://iotco.net/telosb.png)
+![telosb](http://iotco.net/telosb.png)  
 (telosb mote)
