@@ -29,7 +29,7 @@ we use:
 
 finally we simulate the project with `cooja` and seee the resault of [cooja](https://anrg.usc.edu/contiki/index.php/Cooja_Simulator) simulation below:
 
-## first resualt with cooja (in range)
+## first result with cooja (in range)
 we can see the leds according to each three mote turning on  
 each mote broadcast a message to other motes and demonestrate on (picture 1) that the leds related to other motes turn on other motes this means that the broadcast message with other motes received from each of them and turn related led
 - the led one with **green** light related to **mote two**.
@@ -40,7 +40,7 @@ each mote broadcast a message to other motes and demonestrate on (picture 1) tha
 (picture 1)
 
 
-## second resualt with cooja (one out of range)
+## second result with cooja (one out of range)
 we can see when we change the position of one mote and set out of range in other motes the related led of out range mote is turned of
 
 ![screenshot from resualt of cooja](http://iotco.net/iothw1-2.jpg)  
