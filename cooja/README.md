@@ -46,6 +46,9 @@ we can see when we change the position of one mote and set out of range in other
 ![screenshot from result of cooja](http://iotco.net/iothw1-2.jpg)  
 (picture 2)
 
+## cooja simulator
+
+Cooja Simulator is a network simulator specifically designed for Wireless Sensor Networks.  
 
 ## including files of this repo for running simulation
 
