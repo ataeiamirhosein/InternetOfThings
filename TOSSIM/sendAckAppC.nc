@@ -12,14 +12,11 @@ implementation
 
     App.Boot -> MainC.Boot;
 
-    //Send and Receive interfaces
     App.Receive -> AMReceiverC;
     App.AMSend -> AMSenderC;
 
-    //Radio Control
     App.SplitControl -> ActiveMessageC;
 
-    //Interfaces to access package fields
     App.AMPacket -> AMSenderC;
     App.Packet -> AMSenderC;
     App.PacketAcknowledgements->ActiveMessageC;

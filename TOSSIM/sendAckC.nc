@@ -21,18 +21,16 @@ module sendAckC
 implementation
 {
     uint8_t counter = 0;
-    uint8_t rec_id;
     message_t packet;
-uint16_t value;
+
     task void sendReq();
     task void sendResp();
 
-    //@@@@@@@@
     task void sendReq()
     {
         my_msg_t* mess = (my_msg_t*)(call Packet.getPayload(&packet, sizeof(my_msg_t)));
         mess -> msg_type = REQ;
-        mess -> msg_id = counter++;
+        mess -> msg_counter = counter;
 
         dbg("radio_send", "Try to send a request to node 2 at time %s \n", sim_time_string());
 
@@ -46,11 +44,10 @@ uint16_t value;
             dbg_clear("radio_pack","\t AM type: %hhu \n ", call AMPacket.type(&packet));
             dbg_clear("radio_pack","\t payload:\n ");
             dbg_clear("radio_pack","\t msg_type: %hhu \n ",mess->msg_type);
-            dbg_clear("radio_pack","\t msg_id: %hhu \n ",mess->msg_id);
-          // dbg_clear("radio_pack","\t value: %hhu \n ",mess->value);
+            dbg_clear("radio_pack","\t msg_counter: %hhu \n ",mess->msg_counter);
+            dbg_clear("radio_pack","\t msg_data: %hhu \n ",mess->msg_data);
             dbg_clear("radio_send","\n ");
             dbg_clear("radio_pack","\n ");
-
 
         }
     }
@@ -65,7 +62,6 @@ uint16_t value;
         call SplitControl.start();
 
     }
-//**************SplitControl.startDone//
 
     event void SplitControl.startDone(error_t err)
     {
@@ -89,34 +85,46 @@ uint16_t value;
 
     event void MilliTimer.fired()
     {
-        post sendReq();     
+        post sendReq();
+        counter++;     
     }
 
-    //ooooooAMSend Interface//
     event void AMSend.sendDone(message_t* buf, error_t err)
     {
         if(&packet == buf && err == SUCCESS)
         {
             dbg("radio_send", "packet sent ^-^\n");
+            }
             if(call PacketAcknowledgements.wasAcked(buf))
             {
+
+				if(TOS_NODE_ID ==1)
+				{
+					call MilliTimer.stop();	
+				} 
                 dbg_clear("radio_ack","ACK received. ^_^ :D ");
                 call MilliTimer.stop();
-                
+                dbg("radio_ack","Sending message was stoped.\n");
             }
             else
             {
                 dbg_clear("radio_ack", "but ACK was not received  :'( COME ON NODE 2\n");
-                post sendReq();
+                
+                if(TOS_NODE_ID ==2)
+				{
+					post sendReq();
+				} 
+                
+                
             }
             dbg_clear("radio_send", "at time %s \n ", sim_time_string());
-        }
+        
     } 
 
     event message_t* Receive.receive(message_t* buf, void* payload, uint8_t len) 
     {
         my_msg_t* mess = (my_msg_t*)payload;
-        rec_id = mess->msg_id;
+
         dbg("radio_rec", "message received @_@ hip hip hoooraaaa at time: %s \n", sim_time_string());
         dbg("radio_pack", ">>>\n \t Payload length %huu \n", call Packet.payloadLength(buf));
         dbg_clear("radio_pack","\t Source: %hhu \n ", call AMPacket.source(buf));
@@ -124,14 +132,15 @@ uint16_t value;
         dbg_clear("radio_pack","\t AM type: %hhu \n ", call AMPacket.type(buf));
         dbg_clear("radio_pack","\t payload:\n ");
         dbg_clear("radio_pack","\t msg_type: %hhu \n ",mess->msg_type);
-        dbg_clear("radio_pack","\t msg_id: %hhu \n ",mess->msg_id);
-     //   dbg_clear("radio_pack","\t value: %hhu \n ",mess->value);
+        dbg_clear("radio_pack","\t msg_counter: %hhu \n ",mess->msg_counter);
+        dbg_clear("radio_pack","\t msg_data: %hhu \n ",mess->msg_data);
         dbg_clear("radio_send","\n ");
         dbg_clear("radio_pack","\n ");
 
         if(mess->msg_type == REQ)
         {
             post sendResp();
+            counter=mess->msg_counter;
         }
     return buf;
     } 
@@ -139,8 +148,8 @@ uint16_t value;
     {
         my_msg_t* mess = (my_msg_t*)(call Packet.getPayload(&packet,sizeof(my_msg_t)));
         mess->msg_type = RESP;
-        mess->msg_id = rec_id;
-       // mess->data = data;
+        mess->msg_counter = counter;
+        mess->msg_data = data;
         dbg("radio_send", "Try to send a request to node 1 at time %s \n", sim_time_string());
 
         call PacketAcknowledgements.requestAck(&packet);
@@ -153,8 +162,8 @@ uint16_t value;
             dbg_clear("radio_pack","\t AM type: %hhu \n ", call AMPacket.type(&packet));
             dbg_clear("radio_pack","\t payload:\n ");
             dbg_clear("radio_pack","\t msg_type: %hhu \n ",mess->msg_type);
-            dbg_clear("radio_pack","\t msg_id: %hhu \n ",mess->msg_id);
-            //dbg_clear("radio_pack","\t value: %hhu \n ",mess->value);
+            dbg_clear("radio_pack","\t msg_counter: %hhu \n ",mess->msg_counter);
+            dbg_clear("radio_pack","\t msg_data: %hhu \n ",mess->msg_data);
             dbg_clear("radio_send","\n ");
             dbg_clear("radio_pack","\n ");           
         }

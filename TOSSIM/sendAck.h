@@ -3,7 +3,7 @@
 
 typedef nx_struct my_msg {
         nx_uint8_t msg_type;
-        nx_uint16_t msg_id;
+        nx_uint16_t msg_counter;
         nx_uint16_t msg_data;
 
 }my_msg_t;
