@@ -1,6 +1,5 @@
 /*
  *@author Amirhosein Ataei
- *@id 10722472
  *@date March 22 2020
  */
 
