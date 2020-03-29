@@ -75,7 +75,7 @@ implementation
             dbg("radio", "radio on.\n");
             if(TOS_NODE_ID == 1)
             {
-                dbg("role", "node 1 start sending request.... :-?\n");
+                dbg("role", "node 1 start sending request... \n");
                 call MilliTimer.startPeriodic(1000);
             }
     
@@ -98,7 +98,7 @@ implementation
     {
         if(&packet == buf && err == SUCCESS)
         {
-            dbg("radio_send", "packet sent ^-^\n");
+            dbg("radio_send", "packet sent \n");
             }
             if(call PacketAcknowledgements.wasAcked(buf))
             {
@@ -107,13 +107,13 @@ implementation
 				{
 					call MilliTimer.stop();	
 				} 
-                dbg_clear("radio_ack","ACK received. ^_^ :D ");
+                dbg_clear("radio_ack","ACK received. ");
                 call MilliTimer.stop();
                 dbg("radio_ack","Sending message was stoped.\n");
             }
             else
             {
-                dbg_clear("radio_ack", "but ACK was not received  :'( COME ON NODE 2\n");
+                dbg_clear("radio_ack", "but ACK was not received \n");
                 
                 if(TOS_NODE_ID ==2)
 				{
@@ -130,7 +130,7 @@ implementation
     {
         my_msg_t* mess = (my_msg_t*)payload;
 
-        dbg("radio_rec", "message received @_@ hip hip hoooraaaa at time: %s \n", sim_time_string());
+        dbg("radio_rec", "message received at time: %s \n", sim_time_string());
         dbg("radio_pack", ">>>\n \t Payload length %huu \n", call Packet.payloadLength(buf));
         dbg_clear("radio_pack","\t Source: %hhu \n ", call AMPacket.source(buf));
         dbg_clear("radio_pack","\t Destination: %hhu \n ", call AMPacket.destination(buf));
