@@ -1,7 +1,7 @@
 
 # Internet Of Things cooja simulation (Report and Resault)
 
-we have three file type in this simulation project which describe below:  
+we have three file type in this simulation project which described below:  
 
 in `.h` file we confine the stracture of radio count message functions for example the stracture of variable that is in my project in type of unsign integer 8 bit for variable that keep the **id** of each mote and 32 bit for the **counter**.  
 
