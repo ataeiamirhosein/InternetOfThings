@@ -6,6 +6,8 @@ TOSSIM simulates entire TinyOS applications. It works by replacing components wi
 
 ## Result  
 
+![screenshot from result of tossim](http://iotco.net/tos.png)  
+(picture 1)
 
 ## including files of this repo for running simulation
 
