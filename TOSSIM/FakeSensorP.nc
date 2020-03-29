@@ -2,7 +2,6 @@
  *  Source file for implementation of module Middleware
  *  which provides the main logic for middleware message management
  *
- *  @author Luca Pietro Borsani
  */
  
 generic module FakeSensorP() {
