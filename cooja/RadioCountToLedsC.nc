@@ -43,7 +43,7 @@ implementation {
   }
 
   event void AMControl.stopDone(error_t err) {
-    // do nothing
+    
   }
   
   event void MilliTimer.fired() {
