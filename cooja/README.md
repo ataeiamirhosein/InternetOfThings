@@ -36,14 +36,14 @@ each mote broadcast a message to other motes and demonestrate on (picture 1) tha
 - the led two with **red** light related to **mote one**.
 - the led three with **blue** light related to **mote three**.
 
-![screenshot from resualt of cooja](http://iotco.net/iothw1-1.jpg)  
+![screenshot from result of cooja](http://iotco.net/iothw1-1.jpg)  
 (picture 1)
 
 
 ## second result with cooja (one out of range)
 we can see when we change the position of one mote and set out of range in other motes the related led of out range mote is turned of
 
-![screenshot from resualt of cooja](http://iotco.net/iothw1-2.jpg)  
+![screenshot from result of cooja](http://iotco.net/iothw1-2.jpg)  
 (picture 2)
 
 
