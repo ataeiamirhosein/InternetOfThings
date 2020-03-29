@@ -4,6 +4,11 @@ we have three important file type in this simulation project which described bel
 
 in `.h` file we confine the stracture of functions.
 
+also we have two file with `.nc` that one of them with name of describe `appC` and `C` files.
+
+in `~appC.nc` file we have configuration and implementation of things that is in project. (e.g. timer)
+for `~C.nc` file we have all the program code here for used module interfaces and running events.
+
 ## Result  
 
 we can see the result of tossim below in CLI  
