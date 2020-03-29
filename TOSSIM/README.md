@@ -1,7 +1,8 @@
 # Internet Of Things TOSSIM simulation (Report and Resault)
 
-we have three important file type in this simulation project  
+we have three important file type in this simulation project which described below:  
 
+in `.h` file we confine the stracture of functions.
 
 ## Result  
 
