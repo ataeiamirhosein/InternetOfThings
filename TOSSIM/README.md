@@ -5,10 +5,10 @@ TOSSIM simulates entire TinyOS applications. It works by replacing components wi
 
 including files of this repo for running simulation
 
-- RadioCountToLeds.h
-- RadioCountToLedsAppC.nc
-- RadioCountToLedsC.nc
-- Makefile
+- sendAck.h
+- sendAckAppC.nc
+- sendAckC.nc
+- topology.txt
 
 Finally, we can use :~$ `make micaz sim` command to compile and build files for tossim simulation after that run the python simulation file
 
