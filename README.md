@@ -24,4 +24,4 @@ about TOSSIM simulation
 ![tossim schem](https://www.iotco.net/tossim.png)
 
 
-powered by `MIT`
+powered by @iotco
