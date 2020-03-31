@@ -1,4 +1,8 @@
-## internet of things  
+# internet of things (tinyos)  
 
-https://github.com/ataeiamirhosein/cooja  
-https://github.com/ataeiamirhosein/tossim  
+TinyOS is an open source, BSD-licensed operating system designed for low-power wireless devices, such as those used in sensor networks, ubiquitous computing, personal area networks, smart buildings, and smart meters.  
+
+## for more info  
+
+- https://github.com/ataeiamirhosein/cooja  
+- https://github.com/ataeiamirhosein/tossim  
