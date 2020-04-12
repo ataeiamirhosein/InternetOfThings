@@ -8,6 +8,6 @@ TinyOS is an open source, BSD-licensed operating system designed for low-power w
 - https://github.com/ataeiamirhosein/tossim  
 
 #
-for course prof cesana course iot polimi  
+for course prof cesana, IOT polimi  
 
 ![iot proto](https://www.iotco.net/proto.jpg)
